@@ -1,0 +1,230 @@
+/* Importing the Cairo font */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
+
+/* Resetting basic styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif; /* استخدام خط "Cairo" */
+    height: max-content;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #034a74 50%, #4caf50 100%);
+    color: white;
+}
+
+/* Image Styling */
+.navbar img {
+    width: 150px; /* تكبير حجم الشعار */
+    border-radius: 20%;
+    margin-right: 20px; /* التأكد من أن الشعار على اليسار */
+}
+
+/* Title Styling */
+.navbar h1 {
+    font-size: 1.8em; /* زيادة حجم العنوان */
+    font-weight: bold;
+    text-align: center;
+    margin: 0; /* إزالة أي فراغات إضافية */
+}
+
+/* محاذاة المحتوى في المنتصف */
+.m {
+    flex: 1;
+    text-align: center; /* توسيط النص */
+    font-family: 'Cairo', sans-serif; /* استخدام خط "Cairo" */
+    margin-right: 100px;
+}
+
+/* Link Container */
+.link-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* زيادة المسافة بين الروابط */
+    margin-top: 10px; /* إضافة مساحة فوق الروابط */
+}
+
+/* Link Styling */
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em; /* زيادة حجم الروابط */
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: #ffcc00; /* تغيير لون النص عند التمرير */
+}
+
+/* Definition Styling */
+.definition {
+    font-size: 1.4em; /* تكبير حجم النص التعريفي */
+    color: rgb(4, 190, 29);
+    text-align: center; /* توسيط النص */
+    padding: 20px; /* إضافة حشوة */
+    margin-top: 20px; /* إضافة مساحة فوق النص */
+    line-height: 1.8; /* زيادة تباعد الأسطر */
+}
+
+.rt {
+    font-size: 1.4em;
+    color: rgb(205, 0, 0);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+/* Hadiths Container Styling */
+.hadiths-container {
+    display: flex;
+    flex-wrap: nowrap; /* عدم السماح بانتقال الأحاديث إلى سطر جديد */
+    justify-content: center; /* توسيط الأحاديث في الصفحة */
+    overflow-x: auto; /* السماح بالتمرير الأفقي عند تجاوز الأحاديث العرض */
+    gap: 120px; /* المسافة بين الأحاديث */
+    padding: 20px;
+    
+}
+.hadith-content {
+    text-align: center;
+    font-size: 1.4em;
+    
+    padding: 20px;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+
+/* Styling Each Hadith as a Card */
+.hadith {
+    margin-top: 20px;
+    background-color: #fff;
+    color: #034a74;
+    padding: 20px;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex-shrink: 0; /* لمنع المستطيلات من التقلص عند التمرير */
+    cursor: pointer;
+}
+.hadiths-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 20px;
+}
+
+.hadith:hover {
+    transform: scale(1.1); /* تكبير المستطيل عند التمرير */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* إضافة ظل */
+}
+/* Hadiths Container Styling */
+.hadiths2-container {
+    display: flex;
+    flex-wrap: nowrap; /* عدم السماح بانتقال الأحاديث إلى سطر جديد */
+    justify-content: center; /* توسيط الأحاديث في الصفحة */
+    overflow-x: auto; /* السماح بالتمرير الأفقي عند تجاوز الأحاديث العرض */
+    gap: 120px; /* المسافة بين الأحاديث */
+    padding: 20px;
+    
+}
+.hadiths2-content {
+    text-align: center;
+    font-size: 1.4em;
+    
+    padding: 20px;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+
+/* Styling Each Hadith as a Card */
+.hadiths2 {
+    margin-top: 20px;
+    background-color: #fff;
+    color: #034a74;
+    padding: 20px;
+    width: 1000px;
+    height: 100px;
+    display: flex;
+       align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex-shrink: 0; /* لمنع المستطيلات من التقلص عند التمرير */
+    cursor: pointer;
+}
+.hadiths2-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 20px;
+}
+
+.hadiths2:hover {
+    transform: scale(1.1); /* تكبير المستطيل عند التمرير */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* إضافة ظل */
+}
+.hadiths3-container {
+    display: flex;
+    flex-wrap: nowrap; /* عدم السماح بانتقال الأحاديث إلى سطر جديد */
+    justify-content: center; /* توسيط الأحاديث في الصفحة */
+    overflow-x: auto; /* السماح بالتمرير الأفقي عند تجاوز الأحاديث العرض */
+    gap: 120px; /* المسافة بين الأحاديث */
+    padding: 20px;
+}
+
+.hadith {
+    margin-top: 20px;
+    background-color: #ffffff;
+    color: #034a74;
+    padding: 20px;
+    width: 1050px; /* Adjusted width for better fit */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex-shrink: 0; /* لمنع المستطيلات من التقلص عند التمرير */
+    cursor: pointer;
+}
+
+.hadith:hover {
+    transform: scale(1.1); /* تكبير المستطيل عند التمرير */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* إضافة ظل */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* ترتيب العناصر عمودياً على الشاشات الصغيرة */
+        align-items: flex-start; /* محاذاة العناصر إلى اليسار */
+    }
+
+    .link-container {
+        flex-direction: column; /* ترتيب الروابط عمودياً */
+        margin-top: 5px; /* تعديل المسافة للشاشات الأصغر */
+    }
+}
